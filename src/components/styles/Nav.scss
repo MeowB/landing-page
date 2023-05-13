@@ -1,0 +1,9 @@
+@import './variables';
+
+nav {
+	background-color: $c-dark-blue;
+	display: flex;
+	padding: 15px;
+	justify-content: space-between;
+
+}

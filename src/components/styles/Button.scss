@@ -1,0 +1,12 @@
+@import './variables';
+@import './mixin';
+
+button {
+	@include font($text);
+	background-color: $c-green;
+	color: $c-dark-blue;
+	border: none;
+	width: 125px;
+	height: 50px;
+	font-weight: bold;
+}

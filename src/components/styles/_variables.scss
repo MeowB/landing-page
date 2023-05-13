@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@200;600&family=Manrope:wght@400;600&display=swap');
+// @font-face {
+// 	font-family: "Faunces";
+// 	src: url("../assets/fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf")  format('truetype');
+// 	font-weight: normal;
+// 	font-style: normal;
+// }
+
+// __COLOR VARIABLES
+$c-dark-blue: #24053E;
+$c-green: #44FFA1;
+$c-grey: #584D62;
+$c-white-background: #FCF8FF;
+$c-white: #FFFFFF;
+
+// __FONTS VARIABLES
+$font-family-headings: "Fraunces";
+$font-family-text: "Manrope";
+
+$heading-l: (
+  font-family: $font-family-headings,
+  font-weight: 600, // Semi-Bold is equivalent to a font-weight of 600
+  font-size: 80px,
+  line-height: 80px,
+);
+
+$heading-m: (
+  font-family: $font-family-headings,
+  font-weight: 600, // Semi-Bold is equivalent to a font-weight of 600
+  font-size: 56px,
+  line-height: 64px,
+);
+
+$heading-s: (
+  font-family: $font-family-headings,
+  font-weight: 600, // Semi-Bold is equivalent to a font-weight of 600
+  font-size: 32px,
+  line-height: 40px,
+);
+
+$text: (
+  font-family: $font-family-text,
+  font-weight: 400, // regular is equivalent to a font-weight of 400
+  font-size: 18px,
+  line-height: 32px,
+);
+
+$links: (
+	font-family: $font-family-text,
+	font-weight: 600,
+	font-size: 18px,
+	line-height: 32px,
+);
