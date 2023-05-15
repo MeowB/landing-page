@@ -5,26 +5,32 @@ header {
 	background-color: $c-dark-blue;
 }
 
-h1 {
-	@include font($heading-s);
-	color: $c-white;
-	padding: 40px;
-	margin: 0;
-
-	span {
-		border-bottom: 3px solid $c-green;
+.content {
+	h1 {
+		@include font($heading-s);
+		color: $c-white;
+		padding: 40px;
+		margin: 0;
+	
+		span {
+			border-bottom: 3px solid $c-green;
+		}
 	}
 }
+
 
 button {
 	margin-bottom: 50px;
 }
 
 .image-container {
+	margin: 0;
+	padding: 0;
 	width: 100%;
-	background-image: radial-gradient(ellipse at top, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 1) 40.5%);
+	background: radial-gradient(ellipse at top, rgba(36, 5, 62, 1) 40%, rgba(255, 255, 255, 1) 40.5%);
 	background-size: 300%;
 	background-position-x: center;
+	background-clip: p;
 	img {
 		width: 80%;
 	}
