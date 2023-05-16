@@ -1,0 +1,30 @@
+@import './variables';
+@import './mixin';
+
+.CTA {
+	padding: 15px;
+	width: fit-content;
+
+	img {
+		width: 90%;
+		position: relative;
+		top: 80px;
+		z-index: -1;
+	}
+
+	.text {
+		background-color: $c-dark-blue;
+		color: $c-white;
+
+		h3 {
+			@include font($heading-s);
+			padding: 30px;
+			font-size: 1.8em;
+		}
+
+		p {
+			@include font($text);
+			padding: 0 25px 35px 25px;
+		}
+	}
+}
