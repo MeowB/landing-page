@@ -1,11 +1,12 @@
 @import './variables';
 @import './mixin';
 
-header {
-	background-color: $c-dark-blue;
+.svg {
+	display: none;
 }
 
 .content {
+	background-color: $c-dark-blue;
 	h1 {
 		@include font($heading-s);
 		color: $c-white;
@@ -30,8 +31,52 @@ button {
 	background: radial-gradient(ellipse at top, rgba(36, 5, 62, 1) 40%, rgba(255, 255, 255, 1) 40.5%);
 	background-size: 300%;
 	background-position-x: center;
-	background-clip: p;
 	img {
 		width: 80%;
 	}
 }
+
+@media (min-width: 768px) {
+
+	header {
+
+		.svg {
+			position: absolute;
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-start;
+			width: 100%;
+			overflow: hidden;
+			height: 100%;
+
+			.circles-left {
+				position: relative;
+				left: -225px;
+				top: 50px;
+			}
+
+			.circles-right {
+				position: relative;
+				right: -100px;
+				top: 200px;
+			}
+
+		}
+
+		.content {
+			h1 {
+				@include font($heading-m);
+				max-width: 500px;
+				margin: auto;
+			}
+		}
+
+		// __image size
+		.image-container {
+			img {
+				width: 60%;
+			}
+		}
+	}
+}
+  
