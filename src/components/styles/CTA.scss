@@ -2,29 +2,71 @@
 @import './mixin';
 
 .CTA {
-	padding: 15px;
-	width: fit-content;
 
-	img {
+
+
+	.founder {
 		width: 90%;
 		position: relative;
-		top: 80px;
+		display: flex;
+		margin: auto;
+		top: 120px;
 		z-index: -1;
 	}
+
+	.circles-cta {
+		display: none;
+	}
+
 
 	.text {
 		background-color: $c-dark-blue;
 		color: $c-white;
+		padding: 35px 25px;
+		margin: 30px;
 
 		h3 {
 			@include font($heading-s);
-			padding: 30px;
 			font-size: 1.8em;
+			margin-bottom: 25px
 		}
 
 		p {
 			@include font($text);
-			padding: 0 25px 35px 25px;
+			margin-bottom: 25px
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.CTA {
+		width: 100%;
+		.founder {
+			top: 150px;
+			left: 30px;
+			width: 281px;
+			margin: 0;
+			margin-left: auto;
+			margin-right: 514px;
+		}
+
+		.circles-cta {
+			display: inline-block;
+			position: absolute;
+			right: 0;
+			margin-right: 50px;
+		}
+
+		.text {
+			h3 {
+				@include font($heading-m);
+				font-size: 1.8em;
+				margin-bottom: 25px
+			}
+			padding: 50px;
+			margin-left: auto;
+			max-width: 464px;
+			text-align: left;
 		}
 	}
 }
