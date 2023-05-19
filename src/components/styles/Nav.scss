@@ -6,4 +6,13 @@ nav {
 	padding: 15px;
 	justify-content: space-between;
 
+	a {
+		z-index: 100;
+	}
+}
+
+@media (min-width: 1440px) {
+	nav {
+		padding: 15px 150px;
+	}
 }

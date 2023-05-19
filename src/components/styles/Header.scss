@@ -1,39 +1,44 @@
 @import './variables';
 @import './mixin';
 
+header {
+	
 .svg {
 	display: none;
 }
-
-.content {
-	background-color: $c-dark-blue;
-	h1 {
-		@include font($heading-s);
-		color: $c-white;
-		padding: 40px;
-		margin: 0;
-	
-		span {
-			border-bottom: 3px solid $c-green;
+	.content {
+		background-color: $c-dark-blue;
+		h1 {
+			@include font($heading-s);
+			color: $c-white;
+			padding: 40px;
+			margin: 0;
+		
+			span {
+				border-bottom: 3px solid $c-green;
+			}
 		}
 	}
-}
-
-
-button {
-	margin-bottom: 50px;
-}
-
-.image-container {
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	background: radial-gradient(ellipse at top, rgba(36, 5, 62, 1) 40%, rgba(255, 255, 255, 1) 40.5%);
-	background-size: 300%;
-	background-position-x: center;
-	img {
-		width: 80%;
+	
+	
+	button {
+		margin-bottom: 50px;
+		position: relative;
+		z-index: 100;
 	}
+	
+	.image-container {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		background: radial-gradient(ellipse at top, rgba(36, 5, 62, 1) 40%, rgba(255, 255, 255, 1) 40.5%);
+		background-size: 300%;
+		background-position-x: center;
+		img {
+			width: 80%;
+		}
+	}
+	
 }
 
 @media (min-width: 768px) {
@@ -79,4 +84,31 @@ button {
 		}
 	}
 }
-  
+
+@media (min-width: 1440px) {
+	header {
+		.svg {
+			.circles-left {
+				left: -130px;
+			}
+
+			.circles-right {
+				right: -40px;
+			}
+		}
+
+		.content  {
+			h1{
+				@include font($heading-l);
+				max-width: 600px;
+				line-height: 90px;
+			}
+		}
+
+		.image-container {
+			img {
+				width: 50%;
+			}
+		}
+	}
+}
