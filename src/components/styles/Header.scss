@@ -23,6 +23,8 @@ header {
 	
 	button {
 		margin-bottom: 50px;
+		position: relative;
+		z-index: 100;
 	}
 	
 	.image-container {
@@ -82,4 +84,31 @@ header {
 		}
 	}
 }
-  
+
+@media (min-width: 1440px) {
+	header {
+		.svg {
+			.circles-left {
+				left: -130px;
+			}
+
+			.circles-right {
+				right: -40px;
+			}
+		}
+
+		.content  {
+			h1{
+				@include font($heading-l);
+				max-width: 600px;
+				line-height: 90px;
+			}
+		}
+
+		.image-container {
+			img {
+				width: 50%;
+			}
+		}
+	}
+}

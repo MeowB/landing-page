@@ -10,3 +10,10 @@ button {
 	padding: 0 20px;
 	font-weight: bold;
 }
+
+button:hover {
+	background-color: $c-dark-blue;
+	color: $c-green;
+	border: 2px solid $c-green;
+	cursor: pointer;
+}

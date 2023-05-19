@@ -3,7 +3,7 @@
 
 .CTA {
 
-
+	
 
 	.founder {
 		width: 90%;
@@ -58,15 +58,35 @@
 		}
 
 		.text {
+			padding: 50px;
+			margin-left: auto;
+			max-width: 464px;
+			text-align: left;
+			position: relative;
 			h3 {
 				@include font($heading-m);
 				font-size: 1.8em;
 				margin-bottom: 25px
 			}
-			padding: 50px;
-			margin-left: auto;
-			max-width: 464px;
-			text-align: left;
+		}
+	}
+}
+
+@media (min-width: 1440px) {
+	.CTA {
+		.founder {
+			width: 477px;
+			top: 340px;
+			margin-right: 864px;
+		}
+
+		.circles-cta {
+			bottom: -80px;
+		}
+
+		.text {
+			max-width: 680px;
+			margin-right: 100px;
 		}
 	}
 }
