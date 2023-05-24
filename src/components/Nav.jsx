@@ -1,10 +1,12 @@
 import Link from './Link'
 import './styles/Nav.scss'
 
+import urlLogo from '../assets/images/logo-light.svg'
+
 export default function Nav() {
 	return (
 		<nav>
-			<img src=".\src\assets\images\logo-light.svg" alt="Logo" />
+			<img src={urlLogo} alt="Logo" />
 			<Link source='#' value='Apply for access'/>
 		</nav>
 	)
