@@ -1,3 +1,6 @@
+@import './variables';
+@import './mixin';
+
 footer {
 	.logo {
 		margin: 50px;
@@ -5,5 +8,10 @@ footer {
 
 	.socials {
 		margin-bottom: 50px;
+	}
+
+	div{
+		color: $c-dark-blue;
+		margin-bottom: 20px;
 	}
 }

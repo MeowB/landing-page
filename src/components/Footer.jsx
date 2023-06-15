@@ -9,6 +9,11 @@ export default function Footer() {
 		<footer>
 			<img className='logo' src={urlLogo} alt="logo" />
 			<Socials />
+			
+			<div class="attribution">
+				Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+				Coded by <a href="#">Scott Borlon</a>.
+			</div>
 		</footer>
 	)
 }
